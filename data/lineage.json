@@ -1,0 +1,92 @@
+{
+  "customers.customer_id": [
+    {"name": "dashboard_signups",   "type": "dashboard", "criticality": "high"},
+    {"name": "table_orders_daily",  "type": "table",     "criticality": "high"},
+    {"name": "model_churn",         "type": "ml_model",  "criticality": "high"}
+  ],
+  "customers.email": [
+    {"name": "api_marketing",       "type": "api",       "criticality": "medium"},
+    {"name": "report_gdpr",         "type": "report",    "criticality": "high"}
+  ],
+  "customers.signup_date": [
+    {"name": "dashboard_signups",   "type": "dashboard", "criticality": "high"}
+  ],
+  "customers.legacy_flag": [],
+  "customers.country_code": [
+    {"name": "dashboard_geo",       "type": "dashboard", "criticality": "low"}
+  ],
+
+  "orders.order_id": [
+    {"name": "table_orders_daily",  "type": "table",     "criticality": "high"},
+    {"name": "api_orders",          "type": "api",       "criticality": "high"}
+  ],
+  "orders.customer_id": [
+    {"name": "table_orders_daily",  "type": "table",     "criticality": "high"},
+    {"name": "model_churn",         "type": "ml_model",  "criticality": "high"}
+  ],
+  "orders.total_amount": [
+    {"name": "dashboard_revenue",   "type": "dashboard", "criticality": "high"},
+    {"name": "model_churn",         "type": "ml_model",  "criticality": "high"},
+    {"name": "model_ltv",           "type": "ml_model",  "criticality": "medium"},
+    {"name": "report_finance",      "type": "report",    "criticality": "high"},
+    {"name": "table_orders_daily",  "type": "table",     "criticality": "medium"}
+  ],
+  "orders.status": [
+    {"name": "dashboard_ops",       "type": "dashboard", "criticality": "medium"},
+    {"name": "table_orders_daily",  "type": "table",     "criticality": "medium"}
+  ],
+  "orders.created_at": [
+    {"name": "dashboard_revenue",   "type": "dashboard", "criticality": "high"},
+    {"name": "table_orders_daily",  "type": "table",     "criticality": "high"}
+  ],
+  "orders.promo_code": [
+    {"name": "report_marketing",    "type": "report",    "criticality": "low"}
+  ],
+
+  "payments.payment_id": [
+    {"name": "table_payments_daily","type": "table",     "criticality": "medium"}
+  ],
+  "payments.order_id": [
+    {"name": "table_payments_daily","type": "table",     "criticality": "medium"}
+  ],
+  "payments.amount": [
+    {"name": "dashboard_revenue",   "type": "dashboard", "criticality": "high"},
+    {"name": "report_finance",      "type": "report",    "criticality": "high"}
+  ],
+  "payments.currency": [
+    {"name": "dashboard_payments",  "type": "dashboard", "criticality": "medium"}
+  ],
+  "payments.method": [
+    {"name": "report_finance",      "type": "report",    "criticality": "low"}
+  ],
+
+  "events.event_id": [
+    {"name": "table_events_daily",  "type": "table",     "criticality": "high"}
+  ],
+  "events.user_id": [
+    {"name": "model_recommender",   "type": "ml_model",  "criticality": "high"},
+    {"name": "table_events_daily",  "type": "table",     "criticality": "high"}
+  ],
+  "events.event_type": [
+    {"name": "model_recommender",   "type": "ml_model",  "criticality": "high"}
+  ],
+  "events.occurred_at": [
+    {"name": "table_events_daily",  "type": "table",     "criticality": "high"}
+  ],
+  "events.props": [],
+
+  "products.product_id": [
+    {"name": "api_catalog",         "type": "api",       "criticality": "high"}
+  ],
+  "products.name": [
+    {"name": "api_catalog",         "type": "api",       "criticality": "high"}
+  ],
+  "products.category": [
+    {"name": "dashboard_merch",     "type": "dashboard", "criticality": "low"}
+  ],
+  "products.price": [
+    {"name": "dashboard_revenue",   "type": "dashboard", "criticality": "high"},
+    {"name": "api_catalog",         "type": "api",       "criticality": "high"}
+  ],
+  "products.supplier_sku": []
+}

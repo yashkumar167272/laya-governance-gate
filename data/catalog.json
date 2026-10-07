@@ -1,0 +1,60 @@
+{
+  "tables": {
+    "customers": {
+      "owner": "data-platform",
+      "row_count": 250000,
+      "columns": {
+        "customer_id":  {"type": "int",     "nullable": false},
+        "email":        {"type": "varchar", "nullable": false},
+        "signup_date":  {"type": "date",    "nullable": false},
+        "legacy_flag":  {"type": "boolean", "nullable": true},
+        "country_code": {"type": "varchar", "nullable": true}
+      }
+    },
+    "orders": {
+      "owner": "commerce",
+      "row_count": 4200000,
+      "columns": {
+        "order_id":     {"type": "int",     "nullable": false},
+        "customer_id":  {"type": "int",     "nullable": false},
+        "total_amount": {"type": "numeric", "nullable": false},
+        "status":       {"type": "varchar", "nullable": false},
+        "created_at":   {"type": "timestamp","nullable": false},
+        "promo_code":   {"type": "varchar", "nullable": true}
+      }
+    },
+    "payments": {
+      "owner": "finance-eng",
+      "row_count": 3900000,
+      "columns": {
+        "payment_id": {"type": "int",     "nullable": false},
+        "order_id":   {"type": "int",     "nullable": false},
+        "amount":     {"type": "numeric", "nullable": false},
+        "currency":   {"type": "varchar", "nullable": false},
+        "method":     {"type": "varchar", "nullable": true}
+      }
+    },
+    "events": {
+      "owner": "growth",
+      "row_count": 180000000,
+      "columns": {
+        "event_id":   {"type": "int",       "nullable": false},
+        "user_id":    {"type": "int",       "nullable": false},
+        "event_type": {"type": "varchar",   "nullable": false},
+        "occurred_at":{"type": "timestamp", "nullable": false},
+        "props":      {"type": "varchar",   "nullable": true}
+      }
+    },
+    "products": {
+      "owner": "merch",
+      "row_count": 48000,
+      "columns": {
+        "product_id": {"type": "int",     "nullable": false},
+        "name":       {"type": "varchar", "nullable": false},
+        "category":   {"type": "varchar", "nullable": true},
+        "price":      {"type": "numeric", "nullable": false},
+        "supplier_sku":{"type": "varchar","nullable": true}
+      }
+    }
+  }
+}

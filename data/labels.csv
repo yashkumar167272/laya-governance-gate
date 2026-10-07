@@ -1,0 +1,16 @@
+change_id,should_allow,risk_level,needs_review
+chg_001,yes,1,no
+chg_002,yes,2,no
+chg_003,yes,1,no
+chg_004,yes,2,no
+chg_005,no,5,yes
+chg_006,yes,2,no
+chg_007,yes,2,no
+chg_008,no,3,yes
+chg_009,no,4,yes
+chg_010,yes,2,no
+chg_011,no,4,yes
+chg_012,no,3,yes
+chg_013,no,4,yes
+chg_014,yes,2,no
+chg_015,no,4,yes

@@ -1,0 +1,15 @@
+{"id": "chg_001", "change_type": "drop_column",   "table": "customers", "column": "legacy_flag"}
+{"id": "chg_002", "change_type": "drop_column",   "table": "events",    "column": "props"}
+{"id": "chg_003", "change_type": "drop_column",   "table": "products",  "column": "supplier_sku"}
+{"id": "chg_004", "change_type": "rename_column", "table": "customers", "column": "country_code", "new_name": "country"}
+{"id": "chg_005", "change_type": "rename_column", "table": "orders",    "column": "total_amount", "new_name": "amount"}
+{"id": "chg_006", "change_type": "rename_column", "table": "payments",  "column": "method",       "new_name": "payment_method"}
+{"id": "chg_007", "change_type": "change_type",   "table": "payments",  "column": "currency",     "from_type": "varchar", "to_type": "char(3)"}
+{"id": "chg_008", "change_type": "change_type",   "table": "products",  "column": "price",        "from_type": "numeric", "to_type": "numeric(10,2)"}
+{"id": "chg_009", "change_type": "change_type",   "table": "events",    "column": "event_type",   "from_type": "varchar", "to_type": "varchar(64)"}
+{"id": "chg_010", "change_type": "make_nullable", "table": "orders",    "column": "status"}
+{"id": "chg_011", "change_type": "make_nullable", "table": "customers", "column": "email"}
+{"id": "chg_012", "change_type": "make_not_nullable", "table": "payments", "column": "method"}
+{"id": "chg_013", "change_type": "drop_column",   "table": "events",    "column": "occurred_at"}
+{"id": "chg_014", "change_type": "rename_column", "table": "orders",    "column": "promo_code", "new_name": "promo"}
+{"id": "chg_015", "change_type": "drop_column",   "table": "payments",  "column": "currency"}
